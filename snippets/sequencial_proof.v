@@ -41,5 +41,5 @@ Proof.
   pose test_expr as t1. unfold test in t1.
   (* Correct way to apply computations on terms during proof *)
   let x := constr:(ltac:(tac_1 t1)) in pose x as t2. (* Disadvantage: doesn't print idtac *)
-  let x := tac_1_trace t2 in pose x as t2_trace.
+  let x := tac_1_trace t2 in pose x as t2_trace. (* The correct way to trace debugging information *)
 Admitted.
