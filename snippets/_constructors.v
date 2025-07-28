@@ -2,8 +2,7 @@
 
 Inductive primitives :=
 | TEq0 (_ : Z)
-| TWhen (_ : Z)
-| TEndWhen
+| TOther
 .
 
 (* NOTE: ideas:
